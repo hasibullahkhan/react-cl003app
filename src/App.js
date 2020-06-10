@@ -1,11 +1,25 @@
-import React from 'react';
+import React,{useState} from 'react';
+export function Message (props){
+  import {Message} from './Message.js'
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+ 
+export default function App() {
+  let [count,SetCount]=useState(1);
   return (
-    <div>Helo world</div>
-  );
+     <div>
+       <Message Counter={count}/>
+       <br />
+     <h3>Value of counter variable is : {count} </h3>
+     <br/>
+     <button onClick={
+       /* ()=> alert('Button Pressed') */
+       ()  => SetCount(++count)
+        }>
+         Update Counter
+        </button> 
+      </div>
+  ); 
+
 }
 
-export default App;
