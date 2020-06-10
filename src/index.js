@@ -4,9 +4,8 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import app from './App' ;
 ReactDOM.render(
-  <React.StrictMode>
-   <App />
-  </React.StrictMode>,
+ 
+   <App />,
   
   document.getElementById('root')
 );
